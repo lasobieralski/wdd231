@@ -274,3 +274,35 @@ a:hover {
   background-color: var(--bs-black);
   fill: white;
 } */
+.media-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: scale(1.05);
+}
+
+.media-card__img {
+  width: 100%;
+  height: auto;
+}
+
+.media-card__title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+#park-footer {
+  background: url('./images/topo_pattern.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  color: #fff;
+}
+
+.contact h4, .contact h3 {
+  margin: 10px 0;
+}

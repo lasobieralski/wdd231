@@ -6,6 +6,9 @@
     <title>Yellowstone</title>
     <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/parkService.mjs"></script>
+    <script type="module" src="js/setHeaderFooter.mjs"></script>
+    <script type="module" src="js/templates.mjs"></script>
   </head>
   <body>
     <p class="disclaimer">
@@ -65,24 +68,7 @@
             <span class="visually-hidden">Open</span> MENU
           </button>
         </div>
-        <!-- <nav class="global-nav">
-          <h2 class="global-nav__section-heading">Explore this Park</h2>
-          <ul class="global-nav__list">
-            <li>
-              <div class="global-nav__split-button">
-                <a href="#">Plan Your Visit</a>
-                <button class="global-nav__split-button__toggle">
-                  <span class="visually-hidden"
-                    >Toggle submenu for Plan Your Visit</span
-                  >
-                  <svg class="icon" role="presentation" focusable="false">
-                    <use xlink:href="/images/sprite.symbol.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </nav> -->
+        
       </section>
       <section id="park-header">
       <div class="hero-banner">
@@ -153,12 +139,37 @@
         </li>
         </ul>
       </nav>
-        <!-- <svg class="icon" role="presentation" focusable="false">
-          <use xlink:href="/images/sprite.symbol.svg#alert"></use>
-        </svg> -->
+        
       </section>
     </header>
-    <main id="main"></main>
+    <main id="main">
+      <section class="intro">
+        <h2>Yellowstone National Park</h2>
+        <p>
+          On March 1, 1872, Yellowstone became the first national park 
+          for all to enjoy the unique hydrothermal wonders. Today, 
+          millions of people come here each year to camp, hike, and 
+          enjoy the majesty of the park.
+        </p>
+      </section>
+      <section class="info">
+        <h3>Current Conditions</h3>
+        <p>See what conditions to expect in the park before leaving on your trip!</p>
+        <h3>Fees and Passes</h3>
+        <p>Learn about the fees and passes that are available.</p>
+        <h3>Visitor Centers</h3>
+        <p>Learn about the visitor centers in the park</p>
+      </section>
+    </main>
     <footer id="park-footer"></footer>
+    <footer id="footerTemplate">
+      <!-- <img src="images/topo_pattern.png" alt="Topo pattern background for the footer."> -->
+      <h4>CONTACT INFO</h4>
+      <h5>Mailing Address:</h5>
+      <p>PO Box 168</p>
+      <p>Yellowstone National Park, WY 82190-0168</p>
+      <h5>Phone:</h5>
+      <p>307-344-7381</p>
+    </footer>
   </body>
 </html>
