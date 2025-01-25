@@ -1,0 +1,38 @@
+#park-footer, .park-footer {
+    background: url('./images/topo_pattern.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: var(--bs-black);
+}
+
+#contact {
+  background: url('./images/topo_pattern.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    color: var(--bs-black);
+}
+
+.contact h4, .contact h3 {
+  margin: 10px 0;
+}
+
+footer {
+  background: url("./images/topo_pattern.png");
+  color: black;
+  text-align: center;
+  font-size: 1rem; /* Smaller font for mobile */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  gap: 15px; /* Space between items */
+  border-radius: 10px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem; /* Smaller font size for links */
+}
+
+   

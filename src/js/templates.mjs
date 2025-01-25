@@ -1,20 +1,13 @@
-function parkInfoTemplate(info) {
+export function parkInfoTemplate(info) {
     return `<a href="/" class="hero-banner__title">${info.name}</a>
     <p class="hero-banner__subtitle">
         <span>${info.designation}</span>
         <span>${IntersectionObserver.states}</span>
     </p>`;
 }
-// function setHeaderInfo(data) {}
-const disclaimer = document.querySelector(".disclaimer > a");
-disclaimer.href = parkData.url;
-disclaimer.innerHTML.fullName;
 
-document.querySelector("head > title").textContent = parkData.fullName;
-document.querySelector(".hero-banner > img".src = parkData.images[0].url);
-document.querySelector("hero-banner__content").innerHTML = parkInfoTemplate(parkData);
 
-function mediaCardTemplate(info) {
+export function mediaCardTemplate(info) {
     return `
     <div class="media-card">
         <a href="${info.link}">
@@ -35,7 +28,7 @@ function getVoicePhone(numbers) {
     return voice.phoneNumber;
 }
 
-function footerTemplate(info) {
+export function footerTemplate(info) {
     const mailing = getMailingAddress(info.addresses);
     const voice = getVoicePhone(info.contacts.phoneNumbers);
     
