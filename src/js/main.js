@@ -1,4 +1,4 @@
-import { getParkData, parkInfoLinks } from "./parkService.mjs";
+import { getParkData, getInfoLinks } from "./parkService.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
 import { mediaCardTemplate } from "./templates.mjs";
 
@@ -21,3 +21,4 @@ async function init() {
     setParkIntro(parkData);
     setParkInfoLinks(parkInfoLinks);
 }
+init();

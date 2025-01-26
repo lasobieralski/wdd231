@@ -16,7 +16,14 @@ if (response.ok) {
 }else throw new Error("response not ok")  
   return data;
 }
-
+export function getInfoLinks(data) {
+  const withUpdatedImages = 
+  parkInfoLinks.map((item, index) => {
+    item.image = data[index +2].url;
+    return item;
+  });
+  return withUpdatedImages;
+}
 export async function getParkData() {
   const parkData = await getJson("parks?parkcode=yell");
   return parkData.dat[0];
@@ -201,7 +208,7 @@ const park = {
   name: "Yellowstone",
   designation: "National Park"
 };
-export const parkInfoLinks = [
+const parkInfoLinks = [
   {
       name: "Current Conditions &#x203A;",
       link: "conditions.html",
