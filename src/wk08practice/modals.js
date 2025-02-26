@@ -1,11 +1,11 @@
 //modals.js
 const modal = document.querySelector("#modal");
-const openModalButton = document.querySelector("#open-modal"); //assume you have abutton to open the modal
+const openModalButton = document.querySelector("#open-modal"); //assume you have a button to open the modal
 const closeModalButton = document.querySelector(".close-button");
 
 function openModal() {
     modal.classList.add("open");
-    modal.setAttribute.add("aria-hidden", false);
+    modal.setAttribute("aria-hidden", false);
 }
 
 function closeModal() {
@@ -24,6 +24,7 @@ window.addEventListener("click", function (event) {
 });
 //allow the escape key to close the modal as well.
 window.addEventListener("keydown", function (event) {
-    if (event.key === "Escape")
+    if (event.key === "Escape" && modal.classList.contains("open")) {
         closeModal();
+    }
 });
