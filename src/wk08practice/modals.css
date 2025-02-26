@@ -7,8 +7,8 @@
 6. The modal content should have some padding and margin added for white space. */
 /*modals.css*/
 .modal {
-    /*display: none; /* hidden by default */
-    display: block;
+    display: none; /* hidden by default */
+    /* display: block; */
     position: fixed; /* stay in place */
     z-index: 1000; /* sit on top */
     left: 0;
@@ -31,15 +31,20 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close-button:hover, 
 .close-button:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.open {
+/* .open {
+    display: block;
+} */
+
+.modal.open {
     display: block;
 }
