@@ -13,7 +13,7 @@
     overflow: hidden;
 }
   
-.disclaimer {
+/* .disclaimer {
   padding: 0 1em;
 }
 
@@ -28,5 +28,8 @@
 }
 .alert-caution {
   color: var(--alert-caution);
+} */
+svg {
+  background-color: var(--bs-black);
+  fill: white;
 }
-
