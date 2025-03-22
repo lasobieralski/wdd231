@@ -35,7 +35,7 @@
 }
 /* Title and logo styling */
 
-.site-title {
+/* .site-title {
     display: flex;
     align-items: center;
 }
@@ -52,4 +52,4 @@
     border-top: 34px solid var(--bs-light-green);
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
-}
+} */
